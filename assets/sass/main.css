@@ -440,6 +440,29 @@ p {
   }
 }
 
+.button_table button {
+  background-color: #DA3837;
+  color: #fff;
+  border: 1px solid #DA3837;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 14px;
+}
+@keyframes showHide {
+  0%, 49.9% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+.button_table span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #DA3837;
+  animation: showHide 0.5s infinite 0.1111111111s;
+}
+
 aside {
   padding: 10px 20px;
   background-color: #F9FAFB;

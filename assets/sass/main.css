@@ -813,6 +813,11 @@ aside .logout__ button path {
   border-right: 0 !important;
 }
 
+@media (max-width: 767px) {
+  .statistics__items {
+    flex-wrap: wrap;
+  }
+}
 .statistics__items .statistics_item {
   padding: 5px 25px;
   border-radius: 12px;

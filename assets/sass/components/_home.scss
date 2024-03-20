@@ -1,4 +1,7 @@
 .statistics__items{
+    @media(max-width:767px){
+        flex-wrap: wrap;
+    }
     .statistics_item{
         padding: 5px 25px;
         border-radius: 12px;

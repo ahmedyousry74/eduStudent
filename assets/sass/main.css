@@ -284,15 +284,18 @@ p {
   font-size: 16px;
   font-weight: 500;
 }
-.certificate__layout .certificate__signture .certificate__right, .certificate__layout .certificate__signture .certificate__left {
+.certificate__layout .certificate__signture .certificate__right,
+.certificate__layout .certificate__signture .certificate__left {
   position: relative;
 }
-.certificate__layout .certificate__signture .certificate__right span, .certificate__layout .certificate__signture .certificate__left span {
+.certificate__layout .certificate__signture .certificate__right span,
+.certificate__layout .certificate__signture .certificate__left span {
   color: #050505;
   font-size: 24px;
   font-weight: 600;
 }
-.certificate__layout .certificate__signture .certificate__right span:after, .certificate__layout .certificate__signture .certificate__left span:after {
+.certificate__layout .certificate__signture .certificate__right span:after,
+.certificate__layout .certificate__signture .certificate__left span:after {
   position: absolute;
   content: "";
   background-color: #636363;
@@ -387,7 +390,8 @@ p {
 .login__page form {
   padding: 15px;
 }
-.login__page form input, .login__page form select {
+.login__page form input,
+.login__page form select {
   border-radius: 4px;
   width: 220px;
   height: 40px;
@@ -398,11 +402,13 @@ p {
   color: #050505;
   border-right: 0;
 }
-.login__page form input:focus, .login__page form select:focus {
+.login__page form input:focus,
+.login__page form select:focus {
   box-shadow: none;
   border-color: #DBDBDB;
 }
-.login__page form input option, .login__page form select option {
+.login__page form input option,
+.login__page form select option {
   font-size: 14px;
   margin-bottom: 10px;
   color: #050505;
@@ -411,7 +417,8 @@ p {
   font-size: 14px;
   color: #050505;
 }
-.login__page form input::placeholder, .login__page form select::placeholder {
+.login__page form input::placeholder,
+.login__page form select::placeholder {
   font-size: 14px;
   color: #050505;
 }
@@ -423,7 +430,8 @@ p {
   font-size: 15px;
   font-weight: 500;
 }
-.login__page form button, .login__page form a {
+.login__page form button,
+.login__page form a {
   background: #DA3837;
   border: 1px solid #DA3837;
   padding: 8px 25px;
@@ -491,6 +499,34 @@ p {
   font-weight: 600;
   color: #DA3837;
   animation: showHide 0.5s infinite 0.1111111111s;
+}
+
+.ui-datepicker-inline {
+  width: 100% !important;
+  height: 400px !important;
+  padding: 0 !important;
+  border-radius: 12px !important;
+}
+.ui-datepicker-inline .ui-datepicker-calendar {
+  height: 350px !important;
+}
+.ui-datepicker-inline .ui-datepicker-header {
+  background: #e6e6e6;
+  border-radius: 12px 12px 0 0;
+}
+.ui-datepicker-inline td a {
+  border: 0 !important;
+  background: transparent !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+}
+.ui-datepicker-inline td.ui-datepicker-current-day {
+  background-color: #DA3837;
+  color: #fff;
+  border-radius: 8px;
 }
 
 aside {

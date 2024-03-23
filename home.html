@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/sass/main.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="./assets/css/datatable.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>EDU STUDENT</title>
     <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
   </head>
@@ -361,7 +362,7 @@
   </div>
   <div class="w-100">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="notifications__items notification__item d-flex justify-content-start align-items-start flex-column w-100">
           <h6>الأشعارات</h6>
           <div class="notification__item">
@@ -382,7 +383,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="notifications__items notification__item d-flex justify-content-start align-items-start flex-column w-100">
           <h6>الرسائل</h6>
           <div class="notification__item">
@@ -402,6 +403,9 @@
             <span>27-11-2020</span>
           </div>
         </div>
+      </div>
+      <div class="col-md-4">
+        <div id="date"></div>
       </div>
     </div>
     <div>
@@ -425,7 +429,7 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/datatable.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
-
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
       // Line Chart
       var lineCtx = document.getElementById('materialsChart').getContext('2d');
@@ -479,6 +483,17 @@
       });
   </script>
 
+<script>
+  $(function() {
+     $("#date").datepicker({
+         changeYear: true,
+         changeMonth:true,
+         dateFormat: 'mm/dd/yy',
+         minDate: new Date('01/01/1900'),
+         maxDate: '+1Y'
+     });
+})
+</script>
     
   </body>
 </html>

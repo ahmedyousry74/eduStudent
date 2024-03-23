@@ -568,3 +568,143 @@ p {
         }
     }
 }
+.result__student{
+    .student__info{
+        p{
+            color: $primary-color;
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 10px !important;
+        }
+        span{
+            color: $fifth-color;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    .results__info{
+        h6{
+            font-weight: bold;
+        }
+    }
+    .result__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 35px;
+        a{
+            background-color: transparent;
+            border: 1px solid $second-color;
+            color: $second-color;
+            padding: 10px 45px;
+            border-radius: 25px;
+            transition: 0.5s ease-in-out all;
+            &:hover{
+                background-color: $second-color;
+                color: #fff;
+            }
+        }
+    }
+    .progress_2 {
+        width: 200px;
+        height: 200px;
+        font-size: 30px;
+        color: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        background: $second-color;
+        text-align: center;
+        line-height: 200px;
+        margin: 20px;
+        box-shadow: 2px 2px 2px 2px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .progress_2 .title {
+        position: relative;
+        z-index: 100;
+        left: 1px;
+        top: -36px;
+        font-size: 20px;
+      }
+      .degree{
+        position: absolute;
+        z-index: 99;
+        font-size: 21px;
+      }
+      .progress_2 .overlay {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: $second-color;
+      }
+      .progress_2 .left,
+      .progress_2 .right {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 10px solid #fff;
+        border-radius: 100px 0px 0px 100px;
+        border-right: 0;
+        transform-origin: right;
+      }
+      .progress_2 .left {
+        animation: load1 1s linear forwards;
+      }
+      .progress_2:nth-of-type(2) .right,
+      .progress_2:nth-of-type(3) .right {
+        animation: load2 0.5s linear forwards 1s;
+      }
+      .progress_2:last-of-type .right,
+      .progress_2:first-of-type .right {
+        animation: load3 0.8s linear forwards 1s;
+      }
+      @keyframes load1 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(180deg);
+        }
+      }
+      @keyframes load2 {
+        0% {
+          z-index: 100;
+          transform: rotate(180deg);
+        }
+        100% {
+          z-index: 100;
+          transform: rotate(270deg);
+        }
+      }
+      @keyframes load3 {
+        0% {
+          z-index: 100;
+          transform: rotate(180deg);
+        }
+        100% {
+          z-index: 100;
+          transform: rotate(160deg);
+        }
+      }
+      @keyframes load3 {
+        0% {
+          z-index: 100;
+          transform: rotate(180deg);
+        }
+        100% {
+          z-index: 100;
+          transform: rotate(130deg);
+        }
+      }
+}
